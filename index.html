@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Datos del Usuario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+    <h2>REGISTRO DE INFORMACION PERSONAL</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre completo">
+
+    <input type="date" id="fecha">
+
+    <select id="sangre">
+        <option value="">Tipo de sangre</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+    </select>
+
+    <input type="number" id="altura" placeholder="Altura en pulgadas">
+
+    <input type="number" id="peso" placeholder="Peso en kilogramos">
+
+    <select id="genero">
+        <option value="">Género</option>
+        <option value="f">Femenino</option>
+        <option value="m">Masculino</option>
+    </select>
+
+    <button onclick="mostrarDatos()">calcular informacion</button>
+
+    <div class="resultado" id="resultado">
+        <img id="iconoGenero" class="icono" src="" alt="">
+    </div>
+</div>
+
+<script src="codigo.js"></script>
+</body>
+</html>
